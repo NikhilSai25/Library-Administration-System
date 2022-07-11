@@ -1,0 +1,114 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | General Form Elements</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/adminlte.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/add.css">
+  <style>
+    .a {
+
+
+      font-size: 15px;
+      display: block;
+      width: auto;
+      color: black;
+      background: white;
+      outline-color: burlywood;
+
+
+    }
+  </style>
+
+</head>
+
+<body class="sidebar-mini" style="height: auto;">
+  
+      <!-- Main content -->
+    
+                <form action="/editer/saveedit" method="post">
+                  
+                  <h3 style="color : orange ;text-decoration: bold; text-align: center;">Add Customers</h3>
+
+                    <div class="form-control">
+                      <label for="name" id="lname">Name</label><br>
+                      <input type="text" name="lname" id="lname" value="<%=empar.lname%>">
+                    </div>
+                    <div class="form-control">
+                      <label for="id" id="lid">Id</label><br>
+                      <input type="text" id="lid" name="lid" value="<%=empar.lid%>">
+                    </div>
+                    <div class="form-control">
+                      <label for="subject" id="email">Email</label><br>
+                      <input type="email" name="lemail" id="e" value="<%=empar.email%>">
+                    </div>
+                    <div class="form-control">
+                      <label for="phonenumber" id="lph">Phone Number</label><br>
+                      <input type="text" name="lphno" id="lphno" value="<%=empar.lphno%>">
+                    </div>
+
+                    
+                    <div class="form-control">
+                      <label for="branch" id="gend">Gender</label><br>
+                      <select name="gender">
+                        <% for(let i=0;i<genders.length;i++){ %>
+                          <%if(empar.gender==genders[i].name){%>
+                          
+                          <option value="<%=genders[i].name%>" selected><%=genders[i].name%></option>
+                          <% } else{ %>
+                          <option value="<%=genders[i].name%>"><%=genders[i].name%></option>
+                          <%}%>
+                          <% } %>    
+                      
+                      </select>
+                    </div>
+
+
+                    
+
+                    
+
+                    <div class="form-control">
+                      <label for="dept" id="empkey">Employee Key</label><br>
+                      <input type="text" name="ukey" id="edept" value="<%=empar._id%>">
+                    </div>
+                    
+                    
+                    <!-- /.card-body -->
+
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                  </div>
+                </form>
+              </div>
+
+
+
+
+
+
+
+
+
+            
+    </div>
+
+  </div>
+
+  
+
+
+
+</body>
+
+</html>

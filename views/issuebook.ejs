@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | General Form Elements</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/adminlte.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/add.css">
+
+
+
+
+  <style>
+    .a {
+      font-size: 15px;
+      display: block;
+      width: auto;
+      color: black;
+      background: white;
+      outline-color: burlywood;
+
+
+    }
+  </style>
+
+</head>
+
+<body class="sidebar-mini" style="height: auto;">
+  
+      <!-- Main content -->
+                <!-- /.card-header -->
+                <!-- form start -->
+
+                
+
+                
+              <div style="margin : 50px; margin-left: 15%;" >
+                <form action="/issuebook/books" method="post">
+                  <h3 style="color : orange ;text-decoration: bold; text-align: center;">Add Books</h3>
+                    <div class="form-control">
+                      <label for="empname" id="ename">Name</label><br>
+                      <input type="text" name="lname" id="empname" value="<%=empar.lid%>">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="empid" id="empid"> Id</label><br>
+                        <input type="text" id="eid" name="lid" value="<%=empar.lname%>">
+                    </div>
+                    
+                    <div class="form-control">
+                      <label for="bookname" id="bookname">Book Name</label><br>
+                      <input type="text" id="bookname" name="bname">
+                    </div>
+                    
+                    <div class="form-control">
+                      <label for="date" id="date">Date</label><br>
+                      <input type="date" id="date" name="ldate">
+                    </div>
+                    
+                    <!-- /.card-body -->
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                  
+                </form>
+              </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  
+
+</body>
+
+</html>

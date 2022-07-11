@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <link rel="stylesheet" href="/stylesheets/adminlte.min.css?v=3.2.0">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <!-- Font Awesome -->
+  
+  <link rel="stylesheet" href="/stylesheets/add.css">
+  <style>
+    .a {
+
+
+      font-size: 15px;
+      display: block;
+      width: auto;
+      color: black;
+      background: white;
+      outline-color: burlywood;
+
+
+    }
+  </style>
+
+</head>
+
+<body class="sidebar-mini" style="height: auto;">
+  
+      <!-- Main content -->
+                <!-- /.card-header -->
+                <!-- form start -->
+
+                
+
+                <form action="/addcustomer/saveform" method="post">
+                  
+                  <h3 style="color : orange ;text-decoration: bold; text-align: center;">Add Customers</h3>
+                    <div class="form-control">
+                      <label for="name" id="lname">Name</label><br>
+                      <input type="text" name="lname" id="lmpname" >
+                    </div>
+                    <div class="form-control">
+                      <label for="id" id="lid">Id</label><br>
+                      <input type="text" id="eid" name="lid" >
+                    </div>
+                    <div class="form-control">
+                      <label for="phno" id="lphno">Phone Number</label><br>
+                      <input type="text" name="lph" id="lph" >
+                    </div>
+                    
+                    <div class="form-control">
+                      <label for="email" id="lemail">Email</label>
+                      <input type="email" name="lemail" id="lemail">
+                    </div>
+
+                    <div class="form-control">
+                      <label for="gender" id="lgender">Gender</label><br>
+                      <select name="gender">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Other">Other</option>
+
+                      </select>
+                    </div>
+
+
+                    
+                    
+                    <!-- /.card-body -->
+
+                    
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                </form>
+      
+
+
+
+
+
+
+
+
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  
+
+</body>
+
+</html>

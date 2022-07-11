@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    /*background: rgb(201, 190, 48);*/
+    background-image: url("../images/table.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+.customer{
+
+    float: left;
+}
+
+.display{
+    margin-left: 30px;
+    float: left;
+}
+
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 50px 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.common {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+
+
+}
+
+.common td, .common th {
+    text-align: center;
+    padding: 8px;
+}
+
+.common td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.common thead th {
+    color: #ffffff;
+    background: #4c29aa;
+}
+
+
+
+.common tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .common {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .common thead, .common tbody, .common thead th {
+        display: block;
+    }
+    .common thead th:last-child{
+        border-bottom: none;
+    }
+    .common thead {
+        float: left;
+    }
+    .common tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .common td, .common th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .common thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .common tbody tr {
+        display: table-cell;
+    }
+    .common tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .common tr:nth-child(even) {
+        background: transparent;
+    }
+    .common tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .common tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .common tbody td {
+        display: block;
+        text-align: center;
+    }
+}
